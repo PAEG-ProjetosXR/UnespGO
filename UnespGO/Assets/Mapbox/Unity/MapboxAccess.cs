@@ -145,23 +145,32 @@ namespace Mapbox.Unity
 		/// </summary>
 		private void LoadAccessToken()
 		{
-
-			if (string.IsNullOrEmpty(ConfigurationJSON))
+			try
 			{
-				TextAsset configurationTextAsset = Resources.Load<TextAsset>(Constants.Path.MAPBOX_RESOURCES_RELATIVE);
-				if (null == configurationTextAsset)
+				if (string.IsNullOrEmpty(ConfigurationJSON))
 				{
-					throw new InvalidTokenException(_tokenNotSetErrorMessage);
+					TextAsset configurationTextAsset = Resources.Load<TextAsset>(Constants.Path.MAPBOX_RESOURCES_RELATIVE);
+					if (null == configurationTextAsset)
+					{
+						Debug.LogError(_tokenNotSetErrorMessage);
+						_configuration = new MapboxConfiguration(); // Provide a default configuration to avoid null reference
+						return;
+					}
+					ConfigurationJSON = configurationTextAsset.text;
 				}
-				ConfigurationJSON = configurationTextAsset.text;
-			}
 
 #if !WINDOWS_UWP
-			var test = JsonUtility.FromJson<MapboxConfiguration>(ConfigurationJSON);
-			SetConfiguration(ConfigurationJSON == null ? null : test);
+				var test = JsonUtility.FromJson<MapboxConfiguration>(ConfigurationJSON);
+				SetConfiguration(ConfigurationJSON == null ? null : test, throwExecptions: false);
 #else
-			SetConfiguration(ConfigurationJSON == null ? null : Mapbox.Json.JsonConvert.DeserializeObject<MapboxConfiguration>(ConfigurationJSON));
+				SetConfiguration(ConfigurationJSON == null ? null : Mapbox.Json.JsonConvert.DeserializeObject<MapboxConfiguration>(ConfigurationJSON), throwExecptions: false);
 #endif
+			}
+			catch (Exception ex)
+			{
+				Debug.LogError($"Error loading access token: {ex.Message}");
+				_configuration = new MapboxConfiguration(); // Provide a default configuration to avoid null reference
+			}
 		}
 
 

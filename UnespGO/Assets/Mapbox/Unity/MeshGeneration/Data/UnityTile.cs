@@ -231,7 +231,7 @@ namespace Mapbox.Unity.MeshGeneration.Data
 			if (HeightDataState != TilePropertyState.Unregistered)
 			{
 				//reset height data
-				if (data == null)
+				if(data == null)
 				{
 					HeightData = new float[256 * 256];
 					HeightDataState = TilePropertyState.None;
@@ -245,15 +245,6 @@ namespace Mapbox.Unity.MeshGeneration.Data
 				}
 
 				_heightTexture.LoadImage(data);
-
-				// Verifica se a textura tem dimensões válidas
-				if (_heightTexture.width == 0 || _heightTexture.height == 0)
-				{
-					Debug.LogError("Height texture has invalid dimensions.");
-					HeightDataState = TilePropertyState.None;
-					return;
-				}
-
 				byte[] rgbData = _heightTexture.GetRawTextureData();
 
 				// Get rid of this temporary texture. We don't need to bloat memory.
@@ -288,43 +279,40 @@ namespace Mapbox.Unity.MeshGeneration.Data
 
 		public void SetRasterData(byte[] data, bool useMipMap = true, bool useCompression = false)
 		{
-			// Don't leak the texture, just reuse it.
-			if (RasterDataState != TilePropertyState.Unregistered)
-			{
-				//reset image on null data
-				if (data == null)
+				// Verifique se os dados são nulos ou vazios
+				if (data == null || data.Length == 0)
 				{
+					Debug.LogError("Raster data is null or empty. Cannot create texture.");
 					MeshRenderer.material.mainTexture = null;
-					return;
-				}
-
-				// Garante que a textura seja criada com dimensões válidas
-				if (_rasterData == null || _rasterData.width == 0 || _rasterData.height == 0)
-				{
-					_rasterData = new Texture2D(256, 256, TextureFormat.RGB24, useMipMap);
-					_rasterData.wrapMode = TextureWrapMode.Clamp;
-				}
-
-				_rasterData.LoadImage(data);
-
-				// Verifica se a textura tem dimensões válidas
-				if (_rasterData.width == 0 || _rasterData.height == 0)
-				{
-					Debug.LogError("Raster texture has invalid dimensions.");
 					RasterDataState = TilePropertyState.None;
 					return;
 				}
 
-				if (useCompression)
+				// Não vaze a textura, reutilize-a.
+				if (RasterDataState != TilePropertyState.Unregistered)
 				{
-					// High quality = true seems to decrease image quality?
-					_rasterData.Compress(false);
+					if (_rasterData == null)
+					{
+						// Certifique-se de que as dimensões da textura sejam válidas
+						_rasterData = new Texture2D(256, 256, TextureFormat.RGB24, useMipMap); // Use dimensões padrão válidas
+						_rasterData.wrapMode = TextureWrapMode.Clamp;
+					}
+
+					// Carregue os dados na textura
+					if (!_rasterData.LoadImage(data))
+					{
+						Debug.LogError("Failed to load raster data into texture.");
+						return;
+					}
+
+					if (useCompression)
+					{
+						_rasterData.Compress(false);
+					}
+
+					MeshRenderer.sharedMaterial.mainTexture = _rasterData;
+					RasterDataState = TilePropertyState.Loaded;
 				}
-
-				MeshRenderer.sharedMaterial.mainTexture = _rasterData;
-
-				RasterDataState = TilePropertyState.Loaded;
-			}
 		}
 
 		public void SetVectorData(VectorTile vectorTile)

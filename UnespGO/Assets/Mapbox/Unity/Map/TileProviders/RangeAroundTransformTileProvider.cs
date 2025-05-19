@@ -25,9 +25,8 @@ namespace Mapbox.Unity.Map.TileProviders
 
 			if (_rangeTileProviderOptions.targetTransform == null)
 			{
-				Debug.LogWarning("TransformTileProvider: No location marker transform specified. Assigning default transform.");
-				_rangeTileProviderOptions.targetTransform = FindDefaultTargetTransform();
-				_waitingForTargetTransform = _rangeTileProviderOptions.targetTransform == null;
+				Debug.LogError("TransformTileProvider: No location marker transform specified.");
+				_waitingForTargetTransform = true;
 			}
 			else
 			{
@@ -38,13 +37,6 @@ namespace Mapbox.Unity.Map.TileProviders
 			_map.OnUpdated += UpdateTileExtent;
 		}
 
-		private Transform FindDefaultTargetTransform()
-		{
-			// Attempt to find a default transform in the scene
-			GameObject defaultTarget = GameObject.FindWithTag("Player"); // Example: Look for a GameObject tagged as "Player"
-			return defaultTarget != null ? defaultTarget.transform : null;
-		}
-
 		public override void UpdateTileExtent()
 		{
 			if (!_initialized) return;
@@ -52,13 +44,10 @@ namespace Mapbox.Unity.Map.TileProviders
 			_currentExtent.activeTiles.Clear();
 			_currentTile = TileCover.CoordinateToTileId(_map.WorldToGeoPosition(_rangeTileProviderOptions.targetTransform.localPosition), _map.AbsoluteZoom);
 
-			Debug.Log($"Current Tile: {_currentTile.X}, {_currentTile.Y}, Zoom: {_map.AbsoluteZoom}");
-
 			for (int x = _currentTile.X - _rangeTileProviderOptions.visibleBuffer; x <= (_currentTile.X + _rangeTileProviderOptions.visibleBuffer); x++)
 			{
 				for (int y = _currentTile.Y - _rangeTileProviderOptions.visibleBuffer; y <= (_currentTile.Y + _rangeTileProviderOptions.visibleBuffer); y++)
 				{
-					Debug.Log($"Adding Tile: X={x}, Y={y}");
 					_currentExtent.activeTiles.Add(new UnwrappedTileId(_map.AbsoluteZoom, x, y));
 				}
 			}
