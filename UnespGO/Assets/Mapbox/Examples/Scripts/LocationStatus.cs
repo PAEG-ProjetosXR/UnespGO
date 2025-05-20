@@ -49,7 +49,18 @@
 					}
 				}
 			}
+		}
 
+		public double GetLocationLat()
+		{
+			Location currLoc = _locationProvider.CurrentLocation;
+			return currLoc.LatitudeLongitude.x;
+		}
+		public double GetLocationLong()
+		{
+			Location currLoc = _locationProvider.CurrentLocation;
+			return currLoc.LatitudeLongitude.y;
+		}
 		}
 	}
-}
+
