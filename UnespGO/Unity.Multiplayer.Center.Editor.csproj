@@ -68,8 +68,8 @@
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Recommendations\RecommenderSystemDataObject.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Features\PackageManagement.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Recommendations\Scoring.cs" />
-    <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Analytics\DebugAnalytics.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Recommendations\RecommenderSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Analytics\DebugAnalytics.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\MultiplayerCenterWindow\UI\QuestionnaireView.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\MultiplayerCenterWindow\MultiplayerCenterWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Recommendations\RecommendationAuthoringData.cs" />
@@ -100,8 +100,8 @@
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Questionnaire\Logic.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Recommendations\PreReleaseHandling.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\MultiplayerCenterWindow\TabGroup.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Questionnaire\PresetData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\MultiplayerCenterWindow\TabGroup.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Analytics\MultiplayerCenterAnalyticsFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Questionnaire\QuestionnaireEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546\Editor\Recommendations\RecommendationType.cs" />

@@ -65,7 +65,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.43f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\Editor\CoverageStats\ICoverageStatsProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\Editor\CoverageWindow\CodeCoverageWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\Editor\CoverageFormats\OpenCover\OpenCoverReporterStyles.cs" />
     <Compile Include="Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\Editor\CommandLineParser\CommandLineOptionSet.cs" />
@@ -114,6 +113,7 @@
     <Compile Include="Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\Editor\CoveragePreferences.cs" />
     <Compile Include="Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\Editor\CoverageResultWriterBase.cs" />
     <Compile Include="Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\Editor\Filtering\PathFiltering.cs" />
+    <Compile Include="Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\Editor\CoverageStats\ICoverageStatsProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.testtools.codecoverage@205a02cbcb39\Editor\CodeCoverage.Editor.asmdef" />

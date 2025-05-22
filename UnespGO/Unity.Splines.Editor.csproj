@@ -16,10 +16,10 @@
     <Configurations>Debug;Release</Configurations>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>UnityEditor.Splines</RootNamespace>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Unity.VisualScripting.State.Editor</AssemblyName>
+    <AssemblyName>Unity.Splines.Editor</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -65,77 +65,90 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.43f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\StateDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\BoltStateResources.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\FlowStateEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Flow\UnitBaseStateExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_0_2.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\BoltStateConfiguration.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\FlowStateTransitionWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_2_4.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\FlowStateWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Description\StateMacroDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_1_1.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Flow\FlowGraphContextStateExtension.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Migrations\Migration_Asset_to_Package.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\SuperStateEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\StateTransitionDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Description\StateGraphDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Properties\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\NesterStateEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_1_3.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_0_0.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\FlowStateDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_4_0.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\SuperStateDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\StateAnalysis.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\StateTransitionDescription.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\StateGraphEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\IStateWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\StateTransitionAnalysis.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\FlowStateTransitionAnalyser.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Flow\StateUnitEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\NesterStateTransitionAnalyser.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\StateTransitionEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Flow\StateUnitWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\StateEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_1_2.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\StateAnalyser.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\NesterStateWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\StateWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\StateDescription.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\BoltStateManifest.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\StateRevealCondition.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Description\StateMachineDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_2_2.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Migrations\Migration_1_6_to_1_7.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Flow\StateUnitDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\IStateTransitionWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Graph\StateGraphContext.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_4_1.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\NesterStateTransitionDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_3_0.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Graph\StateCanvas.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\AnyStateDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\NesterStateAnalyser.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\NesterStateTransitionEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\FlowStateTransitionEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\StateTransitionWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\TriggerStateTransitionWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\StateTransitionAnalyser.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Migrations\Migration_1_5_1_to_1_5_2.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\BoltState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\AnyStateWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Analytics\StateMacroSavedEvent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\NesterStateTransitionWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\SuperStateWidget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Transitions\FlowStateTransitionDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\States\NesterStateDescriptor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_0_1.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Plugin\Changelogs\Changelog_1_2_3.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\SplinePropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Controls\DirectManipulation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\KnotReorderableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\ToolbarsOverlays\SplineHandleSettingsWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\ToolbarsOverlays\TangentDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Utilities\PathIcons.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Controls\TangentHandles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\TangentModePropertyField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Core\SplineElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\ToolbarsOverlays\SplineHandleSettingsDropdown.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\SplineMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\SplineToolContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\ToolbarsOverlays\DefaultKnotTypeDropdown.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\CommonElementDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\SplineDataPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Utilities\SplineCacheUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Components\SplineContainerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Utilities\SplineSelectionUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Core\SplineSelection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\KnotPlacementTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\SplineMoveTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\SplineDataDictionaryPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\SplineActionZone.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\ElementInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\SplineReorderableList.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Core\PathSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Components\SplineAnimateEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Components\SplineComponentEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\SplineDataReorderableListUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\TangentPropertyField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\ElementDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\SplineDataHandles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Utilities\SplineExtrudeUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\ToolbarsOverlays\BezierKnotDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\CreateSplineTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Controls\SplineMeshHandle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\SplineTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\SplineInfoPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Utilities\SerializedPropertyUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\SplineScaleTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Core\CopyPaste.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\BezierTangentPropertyField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\SplineGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Controls\SplineElementRectSelector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\KnotPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\TransformOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\ReadOnlyField.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\ToolbarsOverlays\HandleRotationDropdown.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\ToolbarsOverlays\Separator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Controls\KnotHandles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\SplineIndexPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\ToolbarsOverlays\SplineInspectorOverlay.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\SplineDataConversionWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\EditorSplineGizmos.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Core\SelectionContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Controls\SplineHandles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Utilities\SplineHandleUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\KnotPlacementData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Utilities\SplineGizmoUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\CreateToolbarBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\SplineGUIUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\Editors\EmbeddedSplineDataPropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Utilities\EditorSplineUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Controls\CurveHandles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Controls\SplineHandleSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Utilities\SplineDataHandle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Tools\SplineRotateTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Components\SplineExtrudeEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Components\SplineInstantiateEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\GUI\ToolbarsOverlays\Float3PropertyField.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.visualscripting@1b53f46e931b\Editor\VisualScripting.State\Unity.VisualScripting.State.Editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Stylesheets\SplineAnimateInspectorLight.uss" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Resources\Overlays\UXML\splinedata-element.uxml" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Resources\UI\UXML\splineanimate-inspector.uxml" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Stylesheets\SplineInspectorCommon.uss" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Resources\Overlays\UXML\splinedata-go-foldout.uxml" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Stylesheets\SplineInspectorLight.uss" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Stylesheets\SplineInspectorDark.uss" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Unity.Splines.Editor.asmdef" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Stylesheets\SplineAnimateInspectorCommon.uss" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Stylesheets\SplineAnimateInspectorDark.uss" />
+    <None Include="Library\PackageCache\com.unity.splines@d3e1e500c9a0\Editor\Resources\Overlays\UXML\splinedata-overlay.uxml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1204,11 +1217,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.VisualScripting.Core.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.State.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj" />
+    <ProjectReference Include="Unity.Settings.Editor.csproj" />
+    <ProjectReference Include="Unity.Splines.csproj" />
+    <ProjectReference Include="Unity.Mathematics.csproj" />
     <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
     <ProjectReference Include="UnityEngine.TestRunner.csproj" />

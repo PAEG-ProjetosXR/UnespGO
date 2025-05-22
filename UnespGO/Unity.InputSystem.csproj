@@ -65,6 +65,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.43f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Plugins\DualShock\DualShockGamepad.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\Dialog.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Utilities\PrimitiveValue.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\ControlPicker\InputControlDropdownItem.cs" />
@@ -251,8 +252,8 @@
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Plugins\OnScreen\OnScreenSupport.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Plugins\UI\TrackedDeviceRaycaster.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\Debugger\InputDeviceDebuggerWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Utilities\Substring.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Actions\InputBindingResolver.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Utilities\Substring.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Controls\Processors\NormalizeProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\PropertyDrawers\InputActionReferencePropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Utilities\CSharpCodeHelpers.cs" />
@@ -312,8 +313,8 @@
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Actions\InputActionChange.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\Debugger\InputActionDebuggerWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Devices\Keyboard.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Utilities\InlinedArray.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Events\StateEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Utilities\InlinedArray.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\UITKAssetEditor\Views\InputActionMapsTreeViewItem.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Plugins\OSX\OSXGameController.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Plugins\XR\Devices\GoogleVR.cs" />
@@ -364,8 +365,8 @@
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\ControlPicker\InputControlPathEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Devices\Haptics\DualMotorRumbleCommand.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Actions\Composites\ButtonWithOneModifier.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Events\TextEvent.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\AssetImporter\InputActionImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Events\TextEvent.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\Internal\AdvancedDropdown\AdvancedDropdownState.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\UITKAssetEditor\Views\ActionMapsView.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\UITKAssetEditor\Views\ActionPropertiesView.cs" />
@@ -464,7 +465,6 @@
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Controls\Processors\NormalizeVector2Processor.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Devices\Remote\InputRemoting.cs" />
     <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\Analytics\InputActionsEditorSessionAnalytic.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Plugins\DualShock\DualShockGamepad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.inputsystem@e2c83221d2dc\InputSystem\Editor\UITKAssetEditor\PackageResources\ControlSchemeEditor.uxml" />

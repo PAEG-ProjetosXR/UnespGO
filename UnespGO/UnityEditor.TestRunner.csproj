@@ -104,13 +104,13 @@
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestBuildAssemblyFilter.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\NUnitExtension\Attributes\TestPlayerBuildModifierAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestRun\Tasks\LegacyPlayerRunTask.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\Api\ExecutionSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\Api\Analytics\RunFinishedData.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestRunner\Utils\TestListCacheData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\Api\ExecutionSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\GUI\Controls\SelectableItemContent.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\Api\CallbacksHolder.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestLaunchers\PlatformSetup\ApplePlatformSetup.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestRun\RequiredTestRunDataMissingException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestLaunchers\PlatformSetup\ApplePlatformSetup.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\CommandLineTest\SetupException.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestRun\Tasks\Scene\StoreSceneSetupTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestRun\Tasks\BuildTestTreeTask.cs" />
@@ -183,8 +183,8 @@
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestLaunchers\RemotePlayerLogController.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\CommandLineTest\TestState.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestRun\Tasks\PreparePlayModeRunTask.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\UnityTestProtocol\Messages\PlayerSystemInfoMessage.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestRun\Tasks\CleanupVerificationTask.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\UnityTestProtocol\Messages\PlayerSystemInfoMessage.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestRun\Data\TaskMode.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestLaunchers\PlatformSetup\IPlatformSetup.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@5ac417e07314\UnityEditor.TestRunner\TestRunner\EditModePCHelper.cs" />
