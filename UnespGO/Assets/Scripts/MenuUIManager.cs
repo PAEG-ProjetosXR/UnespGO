@@ -1,5 +1,8 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using Image = UnityEngine.UI.Image;
 
 public class MenuUIManager : MonoBehaviour
 {
@@ -8,6 +11,7 @@ public class MenuUIManager : MonoBehaviour
     int tempEvent;
     public TextMeshProUGUI locationName;
     public TextMeshProUGUI locationDescription;
+    public Image locationImage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,15 +24,17 @@ public class MenuUIManager : MonoBehaviour
 
     }
 
-    public void DisplayEventPanel(int eventID, string eventName, string eventDescription)
+    public void DisplayEventPanel(int eventID, string eventName, string eventDescription, Sprite eventImage)
     {
         if (isEventPanelActive == false)
         {
+            Debug.Log("Abrindo tela");
             tempEvent = eventID;
             EventPanelUser.SetActive(true);
             isEventPanelActive = true;
             locationName.text = eventName;
             locationDescription.text = eventDescription;
+            locationImage.sprite = eventImage;
         }
     }
 

@@ -3,6 +3,7 @@ using Mapbox.Utils;
 using Mapbox.Unity.Map;
 using Mapbox.Unity.MeshGeneration.Factories;
 using Mapbox.Unity.Utilities;
+using UnityEngine.UI;
 
 
 namespace ScriptableObjects
@@ -16,6 +17,7 @@ namespace ScriptableObjects
         //Vector2d[] locations;
 
         [field: SerializeField] public string locationName { get; set; }
+        [field: SerializeField] public Sprite locationImage { get; set; }
         [field: SerializeField] public string locationDescription { get; set; }
         //[field: SerializeField] public GameObject PopUpPrefab { get; set; }
 

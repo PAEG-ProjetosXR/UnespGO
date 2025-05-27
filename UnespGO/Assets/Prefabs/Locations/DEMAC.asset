@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ed4caaabc998341b4e2f4b66edfd28, type: 3}
+  m_Name: DEMAC
+  m_EditorClassIdentifier: 
+  locationStrings: -22.392816805582566, -47.5437371204101
+  <locationName>k__BackingField: DEMAC
+  <locationImage>k__BackingField: {fileID: 21300000, guid: 057cd15f230cbed4e80dafc32997ee67, type: 3}
+  <locationDescription>k__BackingField: "Departamento de Matem\xE1tica Aplicada e
+    Computa\xE7\xE3o. Fundado em 1985, a partir do desmembramento do departamento
+    de Matem\xE1tica e Estat\xEDstica, o Departamento de Matem\xE1tica, Estat\xEDstica
+    e Computa\xE7\xE3o \xE9 respons\xE1vel pela maioria da carga did\xE1tica do curso
+    de Ci\xEAncias da Computa\xE7\xE3o. Al\xE9m do curso de Ci\xEAncias da Computa\xE7\xE3o,
+    o departamento atende tamb\xE9m outros cursos de gradua\xE7\xE3o como F\xEDsica,
+    Geologia, Matem\xE1tica, Biologia, Ecologia e Engenharia Ambiental. Possui 4
+    laborat\xF3rios did\xE1ticos de inform\xE1tica, sendo os Laborat\xF3rios Did\xE1tico
+    de Computa\xE7\xE3o I, II, III, IV, 3 laborat\xF3rios did\xE1ticos tem\xE1ticos,
+    sendo o Laborat\xF3rio de Microprocessadores, Laborat\xF3rio de Redes e Sistemas
+    Distribu\xEDdos e o Laborat\xF3rio de Eletr\xF4nica, 10 laborat\xF3rios de pesquisa,
+    sendo Astrof\xEDsica Computacional, Astronomia Din\xE2mica, Bioinform\xE1tica
+    e Intelig\xEAncia Computacional, Caos na Mec\xE2nica Cl\xE1ssica, Semicl\xE1ssica
+    e Qu\xE2ntica, Engenharia de Software e de Tecnologias da Informa\xE7\xE3o e
+    Comunica\xE7\xE3o, Hardware, Inform\xE1tica na Educa\xE7\xE3o, Intelig\xEAncia
+    Artificial, PRISMA (Pattern Recognition, Image and Signal Processing, and Multimedia
+    Applications), ReLaSe (Research Laboratory in Software Enginnering) e dois anfiteatros,
+    Anfiteatro I e II."

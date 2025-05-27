@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locationStrings: -22.39575915413219, -47.546973500890054
   <locationName>k__BackingField: 'Biblioteca '
+  <locationImage>k__BackingField: {fileID: 21300000, guid: bedfba3b0b9bd1f4690dba185f5591bf, type: 3}
   <locationDescription>k__BackingField: Biblioteca Campus Rio Claro

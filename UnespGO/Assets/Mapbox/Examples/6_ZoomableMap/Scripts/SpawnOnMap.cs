@@ -46,6 +46,7 @@
 				instance.GetComponent<EventPointer>().eventID = i + 1;
 				instance.GetComponent<EventPointer>().eventName = locationsData[i].locationName;
 				instance.GetComponent<EventPointer>().eventDescription = locationsData[i].locationDescription;	
+				instance.GetComponent<EventPointer>().eventImage = locationsData[i].locationImage;
 				instance.transform.localPosition = _map.GeoToWorldPosition(_locations[i], true);
 				instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
 				_spawnedObjects.Add(instance);

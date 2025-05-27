@@ -4,6 +4,7 @@ using UnityEngine;
 //Mapbox Libraries
 using Mapbox.Examples;
 using Mapbox.Utils;
+using Microsoft.Unity.VisualStudio.Editor;
 
 public class EventPointer : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class EventPointer : MonoBehaviour
     public int eventID;
     public string eventName;
     public string eventDescription;
+    public Sprite eventImage;
     MenuUIManager menuUIManager;
     EventManager eventManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,6 +47,6 @@ public class EventPointer : MonoBehaviour
         var distance = currentPlayerLocation.GetDistanceTo(eventLocation);
         Debug.Log("Distance to event: " + distance);
         Debug.Log("Player Location: " + currentPlayerLocation);
-        menuUIManager.DisplayEventPanel(eventID, eventName, eventDescription);
+        menuUIManager.DisplayEventPanel(eventID, eventName, eventDescription, eventImage);
     }
 }
