@@ -7,6 +7,7 @@ using Image = UnityEngine.UI.Image;
 public class MenuUIManager : MonoBehaviour
 {
     [SerializeField] GameObject EventPanelUser;
+    [SerializeField] GameObject MissionPanelUI;
     bool isEventPanelActive;
     int tempEvent;
     public TextMeshProUGUI locationName;
@@ -44,4 +45,22 @@ public class MenuUIManager : MonoBehaviour
         isEventPanelActive = false;
         Debug.Log("Fechando tela");
     }
+
+    public void ClosePanelButtonClick(GameObject panel)
+    {
+        panel.SetActive(false);
+    }
+
+    public void OpenPanelButtonClick(GameObject panel)
+    {
+        if (panel.activeSelf)
+        {
+            panel.SetActive(false);
+        }
+        else
+        {
+            panel.SetActive(true);
+        }
+    }   
+  
 }

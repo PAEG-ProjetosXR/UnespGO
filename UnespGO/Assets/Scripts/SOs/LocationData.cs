@@ -18,7 +18,7 @@ namespace ScriptableObjects
 
         [field: SerializeField] public string locationName { get; set; }
         [field: SerializeField] public Sprite locationImage { get; set; }
-        [field: SerializeField] public string locationDescription { get; set; }
+        [field: SerializeField, TextAreaAttribute(100,10)] public string locationDescription { get; set; }
         //[field: SerializeField] public GameObject PopUpPrefab { get; set; }
 
     }
