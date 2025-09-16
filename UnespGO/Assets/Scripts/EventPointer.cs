@@ -4,7 +4,7 @@ using UnityEngine;
 //Mapbox Libraries
 using Mapbox.Examples;
 using Mapbox.Utils;
-using Microsoft.Unity.VisualStudio.Editor;
+
 
 public class EventPointer : MonoBehaviour
 {
