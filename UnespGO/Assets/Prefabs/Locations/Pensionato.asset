@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ed4caaabc998341b4e2f4b66edfd28, type: 3}
+  m_Name: Pensionato
+  m_EditorClassIdentifier: 
+  locationStrings: -22.39948422201254, -47.55055143757013
+  <locationName>k__BackingField: Pensionato Cardoso
+  <locationImage>k__BackingField: {fileID: 0}
+  <locationDescription>k__BackingField: 'Moradia de um dos Devs do projeto
+
+'

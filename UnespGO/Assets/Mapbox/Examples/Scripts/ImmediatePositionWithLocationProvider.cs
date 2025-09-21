@@ -16,7 +16,7 @@
 			{
 				if (_locationProvider == null)
 				{
-					_locationProvider = LocationProviderFactory.Instance.DefaultLocationProvider;
+					_locationProvider = LocationProviderFactory.Instance.DeviceLocationProvider;
 				}
 
 				return _locationProvider;

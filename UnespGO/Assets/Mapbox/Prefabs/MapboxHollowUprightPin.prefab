@@ -90,6 +90,10 @@ MonoBehaviour:
   rotationSpeed: 50
   amplitude: 2
   frequency: 0.5
+  eventID: 0
+  eventName: 
+  eventDescription: 
+  eventImage: {fileID: 0}
 --- !u!65 &-6527047359098500851
 BoxCollider:
   m_ObjectHideFlags: 0

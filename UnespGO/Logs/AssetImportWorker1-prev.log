@@ -15,7 +15,7 @@ C:/ProjetosUnity/UnespGO/UnespGO
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-59178
+59033
 -job-worker-count
 7
 -background-job-worker-count
@@ -59,14 +59,14 @@ C:/ProjetosUnity/UnespGO/UnespGO
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [32020]  Target information:
+Player connection [3976]  Target information:
 
-Player connection [32020]  * "[IP] 192.168.15.7 [Port] 0 [Flags] 2 [Guid] 2236680474 [EditorId] 2236680474 [Version] 1048832 [Id] WindowsEditor(7,LucasET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [3976]  * "[IP] 192.168.15.9 [Port] 0 [Flags] 2 [Guid] 2090913295 [EditorId] 2090913295 [Version] 1048832 [Id] WindowsEditor(7,LucasET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [32020]  * "[IP] 26.184.112.114 [Port] 0 [Flags] 2 [Guid] 2236680474 [EditorId] 2236680474 [Version] 1048832 [Id] WindowsEditor(7,LucasET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [3976]  * "[IP] 26.184.112.114 [Port] 0 [Flags] 2 [Guid] 2090913295 [EditorId] 2090913295 [Version] 1048832 [Id] WindowsEditor(7,LucasET) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [32020] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [32020] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [3976] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [3976] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -78,7 +78,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 4.35 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.08 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.43f1 (97272b72f107)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Resources/UnitySubsystems
@@ -94,50 +94,50 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56536
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.43f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.005038 seconds.
-- Loaded All Assemblies, in  0.338 seconds
+Registered in 0.004429 seconds.
+- Loaded All Assemblies, in  0.321 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 239 ms
+Android Extension - Scanning For ADB Devices 203 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.535 seconds
-Domain Reload Profiling: 871ms
-	BeginReloadAssembly (120ms)
+- Finished resetting the current domain, in  0.479 seconds
+Domain Reload Profiling: 798ms
+	BeginReloadAssembly (109ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
+	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (9ms)
 	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (133ms)
-		LoadAssemblies (119ms)
+	LoadAllAssembliesAndSetupDomain (129ms)
+		LoadAssemblies (107ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (129ms)
-			TypeCache.Refresh (128ms)
-				TypeCache.ScanAssembly (116ms)
+		AnalyzeDomain (126ms)
+			TypeCache.Refresh (124ms)
+				TypeCache.ScanAssembly (114ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (536ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (480ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (502ms)
+		SetupLoadedEditorAssemblies (449ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (319ms)
+			InitializePlatformSupportModulesInManaged (281ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (38ms)
-			ProcessInitializeOnLoadAttributes (95ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (88ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -152,11 +152,11 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.695 seconds
+- Loaded All Assemblies, in  0.639 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.06 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.32 ms, found 4 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -165,100 +165,328 @@ Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 3.79 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.91 ms, found 4 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.521 seconds
-Domain Reload Profiling: 1213ms
-	BeginReloadAssembly (143ms)
+- Finished resetting the current domain, in  0.463 seconds
+Domain Reload Profiling: 1098ms
+	BeginReloadAssembly (126ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (30ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (28ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (473ms)
-		LoadAssemblies (364ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (438ms)
+		LoadAssemblies (323ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (196ms)
-			TypeCache.Refresh (155ms)
-				TypeCache.ScanAssembly (138ms)
-			BuildScriptInfoCaches (32ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (147ms)
+				TypeCache.ScanAssembly (132ms)
+			BuildScriptInfoCaches (34ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (522ms)
+	FinalizeReload (464ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (421ms)
+		SetupLoadedEditorAssemblies (379ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (300ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (271ms)
 			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4858 unused Assets / (1.7 MB). Loaded Objects now: 5342.
+Memory consumption went from 99.5 MB to 97.8 MB.
+Total: 5.505900 ms (FindLiveObjects: 0.355500 ms CreateObjectMapping: 0.298800 ms MarkObjects: 3.668300 ms  DeleteObjects: 1.182100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2962.089918 seconds.
+  path: Assets/Prefabs/Locations
+  artifactKey: Guid(c0f964436a95ec74eb9c7213037213f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Locations using Guid(c0f964436a95ec74eb9c7213037213f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8b1bcbb201cc10b01ceaed6f51e5150') in 0.0043207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Prefabs/Locations/Biblioteca.asset
+  artifactKey: Guid(83551714a34740744a9989c4ccf00e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Locations/Biblioteca.asset using Guid(83551714a34740744a9989c4ccf00e94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b76ecb2b6e3ff988d9c42f3978fa3627') in 0.0105921 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 186.245317 seconds.
+  path: Assets/Sprites/DEMAC.jpg
+  artifactKey: Guid(057cd15f230cbed4e80dafc32997ee67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/DEMAC.jpg using Guid(057cd15f230cbed4e80dafc32997ee67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec4ebcf769a62bb294ac0b1b579d2e0d') in 0.0884575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/DEMAT.jpg
+  artifactKey: Guid(95f46df423d28ff4186ec0a7718d2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/DEMAT.jpg using Guid(95f46df423d28ff4186ec0a7718d2c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4314884b856f80ac19a9cccc4272aa56') in 0.0210188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 183.191343 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/art-gallery-15.png
+  artifactKey: Guid(396f423c6693ea642a4bd8fbfe2cb461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/art-gallery-15.png using Guid(396f423c6693ea642a4bd8fbfe2cb461) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e5f8d0a292188f8fb63b4a5bae83206') in 0.0137862 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007083 seconds.
+  path: Packages/com.simonoliver.unityfigma/Docs/AutoBinding.png
+  artifactKey: Guid(77805c1094cb5c94ea2946fe059dee5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.simonoliver.unityfigma/Docs/AutoBinding.png using Guid(77805c1094cb5c94ea2946fe059dee5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd808a3427388b0b9683bde4c5c1de70') in 0.0129679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010099 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/basketball-15.png
+  artifactKey: Guid(77a2d2418bf827047ad47c68ba57da00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/basketball-15.png using Guid(77a2d2418bf827047ad47c68ba57da00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '693f472eabc32c7551e501d2908db6ae') in 0.0106116 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003526 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/bus-15.png
+  artifactKey: Guid(78f64b0fd92be8044b951eb0e474cee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/bus-15.png using Guid(78f64b0fd92be8044b951eb0e474cee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42d5513e8a3f03bbd3d2053c49043f0c') in 0.0109743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/cinema-15.png
+  artifactKey: Guid(4e50a743209c88d46aebeb2a8c761b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/cinema-15.png using Guid(4e50a743209c88d46aebeb2a8c761b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4426a5f082206729fcb4e1932a81701') in 0.0194578 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Mapbox/Resources/Mapbox/PrefabScreens/CitySimulator.gif
+  artifactKey: Guid(53e90d032a2624ab1801469b8ce804e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Resources/Mapbox/PrefabScreens/CitySimulator.gif using Guid(53e90d032a2624ab1801469b8ce804e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '055cccef35368ba9c0a4f8cce3fe4b27') in 0.0185816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/building-15.png
+  artifactKey: Guid(c28cf76c7e16569499fe77e47467dff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/building-15.png using Guid(c28cf76c7e16569499fe77e47467dff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd5dc10e6052ded957a13fa74df3f2e9') in 0.009148 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/car-15.png
+  artifactKey: Guid(6b42d9d154bbf8043960ed1d7bc122e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/car-15.png using Guid(6b42d9d154bbf8043960ed1d7bc122e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e0f7fa5af7af832b1920bbae8c3d417') in 0.0123204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/bicycle-15.png
+  artifactKey: Guid(763e21d069ff11945bcf4afa85ff64ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/bicycle-15.png using Guid(763e21d069ff11945bcf4afa85ff64ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d9141beed06f346641b170c2b1208bd') in 0.0127581 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/cemetery-15.png
+  artifactKey: Guid(a714dbf7a53aa9d4f983a34071aa7dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/cemetery-15.png using Guid(a714dbf7a53aa9d4f983a34071aa7dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da5a4c7558a987a6c428b1d322cac756') in 0.0194327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/bar-15.png
+  artifactKey: Guid(7a36158a2c2724c4d8fb9be96005e55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/bar-15.png using Guid(7a36158a2c2724c4d8fb9be96005e55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec465e7347717bdc9d825627f1542f25') in 0.0169268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/baseball-15.png
+  artifactKey: Guid(aedd248742c9f294eb06125e77817be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/baseball-15.png using Guid(aedd248742c9f294eb06125e77817be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '204b4885c960ecced23351e9c47210c2') in 0.0083447 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Packages/com.simonoliver.unityfigma/Docs/ButtonPressBinding.png
+  artifactKey: Guid(c243d291cf454a5408947addb652ca9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.simonoliver.unityfigma/Docs/ButtonPressBinding.png using Guid(c243d291cf454a5408947addb652ca9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19d544a2e77e1e414186a722745a9bf3') in 0.0176787 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/cafe-15.png
+  artifactKey: Guid(025733da1b0ac7345a65b55d10874afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/cafe-15.png using Guid(025733da1b0ac7345a65b55d10874afa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06eff986c356b936fbcf7ce44b4524a3') in 0.0120138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.054366 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/commercial-15.png
+  artifactKey: Guid(7f1f9d40832d0e349a4a04c4c59cc880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/commercial-15.png using Guid(7f1f9d40832d0e349a4a04c4c59cc880) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c379f571c33d01113292b26c7964730e') in 0.0074585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/dog-park-15.png
+  artifactKey: Guid(3e53e851d8f2bda42af8f59b9a3a0a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/dog-park-15.png using Guid(3e53e851d8f2bda42af8f59b9a3a0a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '987b8f30eb6b13bb6ac5c33ea9a6b63b') in 0.0080906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mapbox/Examples/1_DataExplorer/Screenshots/DataExplorer.png
+  artifactKey: Guid(1b7a3200c45d3425bbf8e891123932d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/1_DataExplorer/Screenshots/DataExplorer.png using Guid(1b7a3200c45d3425bbf8e891123932d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '385f9962ea54409ee2d7cbaae06212d6') in 0.0119153 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/ferry-15.png
+  artifactKey: Guid(02c7aad588166c3419c17ee5a1762a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/ferry-15.png using Guid(02c7aad588166c3419c17ee5a1762a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa7003afbe4828263cf6ba6209945bf3') in 0.008018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/farm-15.png
+  artifactKey: Guid(2991a81e7fd67224fabdcab9cb8290e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/farm-15.png using Guid(2991a81e7fd67224fabdcab9cb8290e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a8b8297fd616c824e6c08c5129b198b') in 0.0079707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Mapbox/Textures/CornerPanelRadius_12px_Stroke_1px.png
+  artifactKey: Guid(184ca10c8fb4d4c4b988276fd798c9dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Textures/CornerPanelRadius_12px_Stroke_1px.png using Guid(184ca10c8fb4d4c4b988276fd798c9dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd31d5c66e897328ee7da578960cf03c') in 0.0096051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/doctor-15.png
+  artifactKey: Guid(205e1b7165ed8fe459642908de62496e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/doctor-15.png using Guid(205e1b7165ed8fe459642908de62496e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a3af027dbe97b9507312552b8fb8f9a') in 0.0086429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Mapbox/Examples/Resources/maki/garden-15.png
+  artifactKey: Guid(111fbabb4b76cc44f9b413ae15c1119e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mapbox/Examples/Resources/maki/garden-15.png using Guid(111fbabb4b76cc44f9b413ae15c1119e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0813ffd98e474dae8fa215339adb7ae') in 0.007891 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Packages/com.simonoliver.unityfigma/Docs/FigmaPrototype.png
+  artifactKey: Guid(469cf20810ad72742989761bb4e0f045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.simonoliver.unityfigma/Docs/FigmaPrototype.png using Guid(469cf20810ad72742989761bb4e0f045) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e61d465554dea01d35b62aa4c998794f') in 0.0191185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.098 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 4.53 ms, found 4 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.779 seconds
+Domain Reload Profiling: 1874ms
+	BeginReloadAssembly (325ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (72ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (609ms)
+		LoadAssemblies (627ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (178ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (151ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (780ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (620ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (137ms)
+			ProcessInitializeOnLoadAttributes (420ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 3.76 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 4.23 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4865 unused Assets / (1.3 MB). Loaded Objects now: 5340.
-Memory consumption went from 99.0 MB to 97.8 MB.
-Total: 5.769400 ms (FindLiveObjects: 0.405100 ms CreateObjectMapping: 0.338700 ms MarkObjects: 3.924100 ms  DeleteObjects: 1.100300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 21725.198812 seconds.
-  path: Assets/Mapbox/Core/Plugins/Android/support-media-compat-25.1.0.aar
-  artifactKey: Guid(e5800669c4138443ab05c67805c05d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Core/Plugins/Android/support-media-compat-25.1.0.aar using Guid(e5800669c4138443ab05c67805c05d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Could not generate preview image
- -> (artifact id: '66581800a24496ba0cd7a1c4bec8af2e') in 0.0068054 seconds
-  ERROR: Import of 'Assets/Mapbox/Core/Plugins/Android/support-media-compat-25.1.0.aar' had errors: Could not generate preview image
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Mapbox/Core/Plugins/Android/support-core-utils-25.1.0.aar
-  artifactKey: Guid(f2bbfd04df8ed4471b7d29d26096ede5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Core/Plugins/Android/support-core-utils-25.1.0.aar using Guid(f2bbfd04df8ed4471b7d29d26096ede5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Could not generate preview image
- -> (artifact id: '9979428120589c2281b9d2107c60da16') in 0.0029973 seconds
-  ERROR: Import of 'Assets/Mapbox/Core/Plugins/Android/support-core-utils-25.1.0.aar' had errors: Could not generate preview image
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Mapbox/Core/Plugins/Android/support-compat-25.1.0.aar
-  artifactKey: Guid(e17a471b7620c4bfea1b492c6dc05b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Mapbox/Core/Plugins/Android/support-compat-25.1.0.aar using Guid(e17a471b7620c4bfea1b492c6dc05b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)Could not generate preview image
- -> (artifact id: '0ee1144f6b27ca445ab97e57f7a2acac') in 0.0017943 seconds
-  ERROR: Import of 'Assets/Mapbox/Core/Plugins/Android/support-compat-25.1.0.aar' had errors: Could not generate preview image
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 9.62 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4830 unused Assets / (0.6 MB). Loaded Objects now: 5342.
-Memory consumption went from 91.3 MB to 90.7 MB.
-Total: 8.804300 ms (FindLiveObjects: 0.641300 ms CreateObjectMapping: 0.329900 ms MarkObjects: 6.368300 ms  DeleteObjects: 1.463000 ms)
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 4856 unused Assets / (1.4 MB). Loaded Objects now: 5367.
+Memory consumption went from 98.1 MB to 96.7 MB.
+Total: 5.581800 ms (FindLiveObjects: 0.420500 ms CreateObjectMapping: 0.310900 ms MarkObjects: 3.583200 ms  DeleteObjects: 1.266200 ms)
 
 Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 3.25 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 4830 unused Assets / (1.4 MB). Loaded Objects now: 5342.
-Memory consumption went from 91.3 MB to 89.9 MB.
-Total: 4.904800 ms (FindLiveObjects: 0.331000 ms CreateObjectMapping: 0.274300 ms MarkObjects: 3.334800 ms  DeleteObjects: 0.964100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

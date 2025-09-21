@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mapbox.Examples;
+using Mapbox.Unity.Map;
+using Mapbox.Unity.Location;
+using Mapbox.Unity.Utilities;
 
 public class Character : MonoBehaviour
 {
@@ -16,7 +20,14 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        // Usando o Input System package
+        Vector2 input = UnityEngine.InputSystem.Keyboard.current != null
+            ? new Vector2(
+                UnityEngine.InputSystem.Keyboard.current.aKey.isPressed ? -1 : UnityEngine.InputSystem.Keyboard.current.dKey.isPressed ? 1 : 0,
+                UnityEngine.InputSystem.Keyboard.current.sKey.isPressed ? -1 : UnityEngine.InputSystem.Keyboard.current.wKey.isPressed ? 1 : 0)
+            : Vector2.zero;
+
+        Vector3 move = new Vector3(input.x, 0, input.y);
         characterController.Move(move * Time.deltaTime * speed);
     }
 }
