@@ -282,6 +282,7 @@
     <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerLineGeometryOptions.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Cache\CachingWebFileSource.cs" />
     <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerCustomStyleAtlasWithColorPallete.cs" />
+    <Compile Include="Assets\Scripts\CompendiumManager.cs" />
     <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerFantasyStyle.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\MapMatching\MatchObject.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\MapMatching\MapMatchingParameters.cs" />
@@ -295,6 +296,7 @@
     <Compile Include="Assets\Mapbox\Unity\Utilities\VectorExtensions.cs" />
     <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\LayerModifier.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\UnixTimestampUtils.cs" />
+    <Compile Include="Assets\Scripts\LocationsUISpawner.cs" />
     <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MeshModifiers\LoftModifier.cs" />
     <Compile Include="Assets\Mapbox\Unity\SourceLayers\TerrainLayer.cs" />
     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\CircularBuffer.cs" />
@@ -426,6 +428,7 @@
     <Compile Include="Assets\Mapbox\Unity\SourceLayers\MapboxDefaultStyles.cs" />
     <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\DisableMeshRendererModifier.cs" />
     <Compile Include="Assets\Mapbox\Unity\Utilities\NodeEditorElementAttribute.cs" />
+    <Compile Include="Assets\Scripts\LocationItemUI.cs" />
     <Compile Include="Assets\Mapbox\Unity\LayerProperties\PrefabItemOptions.cs" />
     <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MeshModifiers\HeightModifier.cs" />
     <Compile Include="Assets\Scripts\TopDownCharacterMover.cs" />

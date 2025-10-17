@@ -7,6 +7,7 @@ using Mapbox.Utils;
 using UnityEngine.InputSystem.EnhancedTouch;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 using UnityEngine.EventSystems;
+using System;
 
 public class EventPointer : MonoBehaviour, IPointerDownHandler
 {
@@ -20,14 +21,26 @@ public class EventPointer : MonoBehaviour, IPointerDownHandler
     public string eventDescription;
     public Sprite eventImage;
     private Touch theTouch;
+    Boolean isFirstTouch = true;
     MenuUIManager menuUIManager;
     EventManager eventManager;
+    CompendiumManager compendiumManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         menuUIManager = GameObject.Find("Canvas").GetComponent<MenuUIManager>();
         eventManager = GameObject.Find("EventManager").GetComponent<EventManager>();
-
+        // tenta obter CompendiumManager do Canvas primeiro, senão usa FindObjectOfType como fallback
+        var canvasObj = GameObject.Find("Canvas");
+        if (canvasObj != null)
+        {
+            compendiumManager = canvasObj.GetComponent<CompendiumManager>();
+        }
+        if (compendiumManager == null)
+        {
+            compendiumManager = FindObjectOfType<CompendiumManager>();
+        }
+        Debug.Log($"EventPointer Start: compendiumManager found = { (compendiumManager != null) }");
     }
 
     void OnEnable()
@@ -71,6 +84,23 @@ public class EventPointer : MonoBehaviour, IPointerDownHandler
         var distance = currentPlayerLocation.GetDistanceTo(eventLocation);
         Debug.Log("Distance to event: " + distance);
         Debug.Log("Player Location: " + currentPlayerLocation);
+        if (isFirstTouch)
+        {
+            isFirstTouch = false;
+            Debug.Log($"First touch detected on {eventName} with EventID {eventID}, invoking compendium.");
+            if (compendiumManager != null)
+            {
+                // se o objetivo é habilitar o botão no compendium (método espera id 1-based)
+                compendiumManager.EnableEntryButton(eventID);
+
+                // se o objetivo é ativar o entry (array entries) use a linha abaixo (id 0-based)
+                // compendiumManager.EnableEntry(eventID - 1);
+            }
+            else
+            {
+                Debug.LogWarning("CompendiumManager is null when attempting to enable entry.");
+            }
+        }
         menuUIManager.DisplayEventPanel(eventID, eventName, eventDescription, eventImage);
     }
 }
